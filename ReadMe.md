@@ -21,7 +21,7 @@ The Language Learning Chatbot follows a serverless architecture and leverages va
 
 To set up and deploy the Language Learning Chatbot locally or on AWS, follow these steps:
 
-    ### Clone the repository:
+### Clone the repository:
 
 ```
 bash
@@ -29,21 +29,21 @@ bash
 git clone https://github.com/your-username/language-learning-chatbot.git
 
 ```
-    ### Set up the AWS services:
-        * Create an AWS account if you don't have one.
-        * Set up AWS Lambda, Amazon Lex, and Amazon S3, following the AWS documentation.
+### Set up the AWS services:
+    * Create an AWS account if you don't have one.
+    * Set up AWS Lambda, Amazon Lex, and Amazon S3, following the AWS documentation.
 
-    ### Configure the project:
-        * Update the AWS credentials in the Lambda function code (lambda/index.cs) to connect to your AWS account.
-        * Customize the chatbot's conversational flow, intents, and responses in Amazon Lex.
+### Configure the project:
+    * Update the AWS credentials in the Lambda function code (lambda/index.cs) to connect to your AWS account.
+    * Customize the chatbot's conversational flow, intents, and responses in Amazon Lex.
 
-    ### Build and deploy the Lambda function:
-        * Build the C# code and package it into a deployment package.
-        * Deploy the Lambda function using the AWS CLI or AWS Management Console.
+### Build and deploy the Lambda function:
+    * Build the C# code and package it into a deployment package.
+    * Deploy the Lambda function using the AWS CLI or AWS Management Console.
 
-    ### Test the chatbot:
-        * Interact with the chatbot by using the chatbot interface in Amazon Lex.
-        * Ensure the vocabulary lookup, grammar explanations, and exercises function as expected.
+### Test the chatbot:
+    * Interact with the chatbot by using the chatbot interface in Amazon Lex.
+    * Ensure the vocabulary lookup, grammar explanations, and exercises function as expected.
 
 ## License
 
