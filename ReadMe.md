@@ -1,6 +1,6 @@
 # LinguaLearn
 
-This language learning chatbot is an educational application designed to assist users in learning a new language. It provides vocabulary lookup, grammar explanations, and interactive exercises to enhance the language learning experience. This project utilizes AWS Lambda and C# for the backend logic, and Amazon Lex for natural language understanding and conversation management.
+This language learning chatbot is an educational application designed to assist users in learning a new language. It provides vocabulary lookup, grammar explanations, and interactive exercises to enhance the language learning experience. This project utilizes AWS Lambda and C# for the backend logic, and integrates with the ChatGPT API for natural language understanding and conversation management.
 
 ## Features
 * Vocabulary Lookup: Retrieve definitions, translations, and example sentences for language vocabulary.
@@ -13,8 +13,8 @@ This language learning chatbot is an educational application designed to assist 
 LinguaLearn follows a serverless architecture and leverages various AWS services:
 
 * AWS Lambda: Executes the backend code written in C#, handling user requests and generating responses.
-* Amazon Lex: Provides natural language understanding capabilities, allowing the chatbot to understand user input and trigger the appropriate actions.
-* Amazon S3 (optional): Stores multimedia content, such as audio pronunciations or images associated with the language learning materials.
+* ChatGPT API: Integrates with the ChatGPT API to facilitate natural language understanding and conversation management.
+* Amazon S3: Stores multimedia content, such as audio pronunciations or images associated with the language learning materials.
 
 ## Getting Started
 
@@ -29,7 +29,7 @@ git clone https://github.com/your-username/lingualearn.git
 ```
 ### Set up the AWS services:
 * Create an AWS account if you don't have one.
-* Set up AWS Lambda, Amazon Lex, and Amazon S3, following the AWS documentation.
+* Set up AWS Lambda and Amazon S3, following the AWS documentation.
 
 ### Configure the project:
 * Update the AWS credentials in the Lambda function code (lambda/index.cs) to connect to your AWS account.
@@ -53,5 +53,6 @@ We would like to thank the following resources and libraries for their contribut
 
 * AWS Lambda
 * AWS SDK for .NET
-* Amazon Lex
 * Amazon S3
+* Amazon Cloud Watch
+* Amazon Cloud Formation
